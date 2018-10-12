@@ -1,5 +1,5 @@
-## MinecraftStatistics
-###### Simplest plugin to sync your player details to your MySQL database
+## MinecraftStatistics 3
+###### A plugin to track player statistics, MinecraftStatistics 3 is a fork of MinecraftStatistics by Zander van der Meer intended for the Miner's Glory community.
 ***
 For a online web view of the statistics of our players I searched for a simple plugin that just sync the most basic details of every online player to the database. Too bad I was unable to find one so I created this myself. It is really small and it only syncs the player data to the database on a frequency you can edit in the config.yml. And it changes the is_online flag on join/leave.
 
