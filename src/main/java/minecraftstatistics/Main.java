@@ -1,6 +1,7 @@
 package minecraftstatistics;
 
 import minecraftstatistics.Classes.MySQL;
+import minecraftstatistics.Commands.DebuggerCommand;
 import minecraftstatistics.Commands.SyncPlayersCommand;
 import minecraftstatistics.Listeners.SetPlayerOfflineListener;
 import minecraftstatistics.Listeners.SetPlayerOnlineListener;
@@ -48,6 +49,7 @@ public class Main extends JavaPlugin {
         new CollectPlayerDataTask(this).runTaskLaterAsynchronously(this, updateFrequency*20);
 
         this.getCommand("statsync").setExecutor(new SyncPlayersCommand(this));
+        this.getCommand("debug").setExecutor(new DebuggerCommand(this));
     }
 
     public void onDisable() {
@@ -114,13 +116,23 @@ public class Main extends JavaPlugin {
         ignore.add(Statistic.KILL_ENTITY);
         ignore.add(Statistic.ENTITY_KILLED_BY);
 
+
         List<Statistic> stats = new ArrayList<Statistic>();
         for(Statistic statistic : Statistic.values()){
-            // If the statistic is inside the ignore arraylist we should ignore it because it *will* throw an exception.
+            // If statistic inside ignore array, then do absolutely nothing
             if(ignore.contains(statistic)) continue;
 
-            // Instead of adding them all by hand, just add which one are available.
+            // Add all available statistics one by one
             stats.add(statistic);
+        }
+
+        // ROUGH CODE AHEAD BEWARE //
+        //Material arr[] = Material.values();
+
+        for (Material material : Material.values()) {
+            // TODO: Add each block in array to MINE_BLOCK statistic (?)
+
+            stats.add(Statistic.MINE_BLOCK);
         }
         return stats;
     }

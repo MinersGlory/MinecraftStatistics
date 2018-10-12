@@ -4,8 +4,13 @@ author: Zethrus fork, original author is Zander van der Meer
 main: minecraftstatistics.Main
 website: https://minersglory.com
 commands:
-    statSync:
+    statsync:
         description: Sync stats of all players currently online
         permission: minecraftstatistics.sync
         default: op
         usage: /statsync
+    debug:
+        description: Command used by developers of the plugin to troubleshoot.
+        permission: minecraftstatistics.debug
+        default: op
+        usage: /debug
