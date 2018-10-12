@@ -5,6 +5,7 @@ import minecraftstatistics.Commands.SyncPlayersCommand;
 import minecraftstatistics.Listeners.SetPlayerOfflineListener;
 import minecraftstatistics.Listeners.SetPlayerOnlineListener;
 import minecraftstatistics.Tasks.CollectPlayerDataTask;
+import org.bukkit.Material;
 import org.bukkit.Statistic;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -106,7 +107,7 @@ public class Main extends JavaPlugin {
         List<Statistic> ignore = new ArrayList<Statistic>();
         ignore.add(Statistic.DROP);
         ignore.add(Statistic.PICKUP);
-        ignore.add(Statistic.MINE_BLOCK);
+        //ignore.add(Statistic.MINE_BLOCK
         ignore.add(Statistic.USE_ITEM);
         ignore.add(Statistic.BREAK_ITEM);
         ignore.add(Statistic.CRAFT_ITEM);
