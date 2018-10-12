@@ -109,7 +109,7 @@ public class Main extends JavaPlugin {
         List<Statistic> ignore = new ArrayList<Statistic>();
         ignore.add(Statistic.DROP);
         ignore.add(Statistic.PICKUP);
-        //ignore.add(Statistic.MINE_BLOCK
+        ignore.add(Statistic.MINE_BLOCK);
         ignore.add(Statistic.USE_ITEM);
         ignore.add(Statistic.BREAK_ITEM);
         ignore.add(Statistic.CRAFT_ITEM);
@@ -124,15 +124,6 @@ public class Main extends JavaPlugin {
 
             // Add all available statistics one by one
             stats.add(statistic);
-        }
-
-        // ROUGH CODE AHEAD BEWARE //
-        //Material arr[] = Material.values();
-
-        for (Material material : Material.values()) {
-            // TODO: Add each block in array to MINE_BLOCK statistic (?)
-
-            stats.add(Statistic.MINE_BLOCK);
         }
         return stats;
     }
