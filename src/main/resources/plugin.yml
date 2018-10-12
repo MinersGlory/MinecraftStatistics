@@ -1,0 +1,9 @@
+name: MinecraftStatistics
+version: 3.0
+author: Zethrus fork, original author is Zander van der Meer
+main: main.java.minecraftstatistics.Main
+website: https://minersglory.com
+commands:
+    statSync:
+        description: Sync stats of all players currently online
+        usage: /statsync
