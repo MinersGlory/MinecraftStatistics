@@ -95,8 +95,7 @@ public class Main extends JavaPlugin {
         if(!getDataFolder().exists()){
             getDataFolder().mkdirs();
         }
-
-        File file = new File(getDataFolder(), "main/resources/config.yml");
+        File file = new File(getDataFolder(), "config.yml");
         if(!file.exists()){
             getLogger().info("Config.yml not found, creating!");
             saveDefaultConfig();
