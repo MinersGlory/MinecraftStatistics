@@ -3,6 +3,7 @@ package minecraftstatistics;
 import minecraftstatistics.Classes.MySQL;
 import minecraftstatistics.Commands.DebuggerCommand;
 import minecraftstatistics.Commands.SyncPlayersCommand;
+import minecraftstatistics.Listeners.BlockBreakListener;
 import minecraftstatistics.Listeners.SetPlayerOfflineListener;
 import minecraftstatistics.Listeners.SetPlayerOnlineListener;
 import minecraftstatistics.Tasks.CollectPlayerDataTask;
@@ -43,13 +44,19 @@ public class Main extends JavaPlugin {
 
         plugin = this;
 
+        // Register listeners
         getServer().getPluginManager().registerEvents(new SetPlayerOfflineListener(), this);
         getServer().getPluginManager().registerEvents(new SetPlayerOnlineListener(this), this);
+        getServer().getPluginManager().registerEvents(new BlockBreakListener(this), this);
 
+
+
+        // Collect player data in async fashion
         new CollectPlayerDataTask(this).runTaskLaterAsynchronously(this, updateFrequency*20);
 
         this.getCommand("statsync").setExecutor(new SyncPlayersCommand(this));
         this.getCommand("debug").setExecutor(new DebuggerCommand(this));
+
     }
 
     public void onDisable() {
