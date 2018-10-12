@@ -1,6 +1,6 @@
-package main.java.minecraftstatistics.Tasks;
+package minecraftstatistics.Tasks;
 
-import main.java.minecraftstatistics.Classes.MySQL;
+import minecraftstatistics.Classes.MySQL;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 

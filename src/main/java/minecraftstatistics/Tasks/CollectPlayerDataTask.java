@@ -1,7 +1,7 @@
-package main.java.minecraftstatistics.Tasks;
+package minecraftstatistics.Tasks;
 
-import main.java.minecraftstatistics.Classes.MySQL;
-import main.java.minecraftstatistics.Main;
+import minecraftstatistics.Classes.MySQL;
+import minecraftstatistics.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.Statistic;
 import org.bukkit.entity.Player;

@@ -1,6 +1,6 @@
-package main.java.minecraftstatistics.Listeners;
+package minecraftstatistics.Listeners;
 
-import main.java.minecraftstatistics.Classes.MySQL;
+import minecraftstatistics.Classes.MySQL;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

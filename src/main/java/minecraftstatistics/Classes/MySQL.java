@@ -1,6 +1,6 @@
-package main.java.minecraftstatistics.Classes;
+package minecraftstatistics.Classes;
 
-import main.java.minecraftstatistics.Main;
+import minecraftstatistics.Main;
 import org.bukkit.Bukkit;
 
 import java.sql.*;

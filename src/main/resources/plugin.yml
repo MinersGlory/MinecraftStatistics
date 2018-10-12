@@ -6,4 +6,6 @@ website: https://minersglory.com
 commands:
     statSync:
         description: Sync stats of all players currently online
+        permission: minecraftstatistics.sync
+        default: op
         usage: /statsync

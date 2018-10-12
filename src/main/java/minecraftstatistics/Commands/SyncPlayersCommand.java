@@ -1,8 +1,8 @@
-package main.java.minecraftstatistics.Commands;
+package minecraftstatistics.Commands;
 
-import main.java.minecraftstatistics.Classes.MySQL;
-import main.java.minecraftstatistics.Main;
-import main.java.minecraftstatistics.Tasks.CollectPlayerDataTask;
+import minecraftstatistics.Classes.MySQL;
+import minecraftstatistics.Main;
+import minecraftstatistics.Tasks.CollectPlayerDataTask;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

@@ -1,10 +1,10 @@
-package main.java.minecraftstatistics;
+package minecraftstatistics;
 
-import main.java.minecraftstatistics.Classes.MySQL;
-import main.java.minecraftstatistics.Commands.SyncPlayersCommand;
-import main.java.minecraftstatistics.Listeners.SetPlayerOfflineListener;
-import main.java.minecraftstatistics.Listeners.SetPlayerOnlineListener;
-import main.java.minecraftstatistics.Tasks.CollectPlayerDataTask;
+import minecraftstatistics.Classes.MySQL;
+import minecraftstatistics.Commands.SyncPlayersCommand;
+import minecraftstatistics.Listeners.SetPlayerOfflineListener;
+import minecraftstatistics.Listeners.SetPlayerOnlineListener;
+import minecraftstatistics.Tasks.CollectPlayerDataTask;
 import org.bukkit.Statistic;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
