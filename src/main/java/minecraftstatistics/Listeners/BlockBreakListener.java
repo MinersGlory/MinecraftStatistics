@@ -32,7 +32,7 @@ public class BlockBreakListener implements Listener {
         /* Insert block break data into MySQL DB below */
 
         // Lets see what this function is returning in terms of block name data
-        player.sendMessage(ChatColor.RED + block.getBlockData().getMaterial().name());
+        player.sendMessage(ChatColor.RED + broken_block_name);
     }
 
 
