@@ -1,7 +1,7 @@
 name: MinecraftStatistics
 version: 3.0
 author: Zethrus fork, original author is Zander van der Meer
-main: main.java.minecraftstatistics.Main
+main: minecraftstatistics.Main
 website: https://minersglory.com
 commands:
     statSync:
